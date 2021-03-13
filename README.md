@@ -1,6 +1,6 @@
 # Replit com Nginx
 
-O [Replit](https://replit.com) é um IDE, editor, compilador, intérprete e REPL online. O Replit tem suport para diversas tecnologias, porém não tem suporte ao Nginx, o objetivo deste projeto é explorar esta limitação e fazer com que o Replit execute o Nginx.
+O [Replit](https://replit.com) é um IDE, editor, compilador, intérprete e REPL online. O Replit tem suporte para diversas tecnologias, porém não tem suporte ao Nginx, o objetivo deste projeto é explorar esta limitação e fazer com que o Replit execute o Nginx.
 
 O REPL deste projeto está disponível em: [https://replit.com/@GuilhermeRodri8/replitwithnginx](https://replit.com/@GuilhermeRodri8/replitwithnginx)
 
@@ -150,6 +150,6 @@ Agora vamos clicar no botão `RUN >` e subir nosso servidor. Opsss... recebemos 
 Por padrão no linux, as portas inferiores que 1024 portas são restritas apenas ao usuário root, o que aconteceu foi que como nosso usuário não tem privilégios `root` então ele não pode iniciar um servidor que escute a porta 80, para corrigir isso vamos no REPL alterar o arquivo `conf/nginx.conf` e na linha `listen 80;` trocar para a porta  8080 que temos acesso, então ficará assim: `listen 8080;`. Vamos aproveitar também que estamos alterando o arquivo de configuração e adicionar no inicio do arquivo a linha `daemon off;` para evitar que o Nginx execute em Background e o Replit não enxergue que ele está em execução.
 
 
-## Liceça
+## Licença
 
 O conteúdo deste projeto em si está licenciado sob a  [Creative Commons Attribution 3.0 Unported license](https://creativecommons.org/licenses/by/3.0/), e os códigos-fonte inclusos no projeto estão licenciado sob a [MIT license](LICENSE).
