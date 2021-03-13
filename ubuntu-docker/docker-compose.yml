@@ -1,0 +1,12 @@
+version: '3.3'
+
+services:
+  ubuntu:
+    build: .
+    image: ubuntu-nginx-build
+    volumes:
+      - ./host:/host
+
+# docker-compose run ubuntu
+# docker-compose run --rm ubuntu
+# docker-compose down --rmi all

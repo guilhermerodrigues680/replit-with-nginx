@@ -1,0 +1,6 @@
+.DS_Store
+
+/ubuntu-docker/host/*
+!/ubuntu-docker/host/.gitkeep
+
+# ignore.md
